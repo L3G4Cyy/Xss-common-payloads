@@ -3,7 +3,7 @@
 <a href="https://portswigger.net/web-security/cross-site-scripting">What is Cross-Site-Scripting?</a>
 
 Basic XSS codes:
-———————————-
+<p>———————————-<p>
 
     ```<script>alert(“XSS”)</script>```
 
